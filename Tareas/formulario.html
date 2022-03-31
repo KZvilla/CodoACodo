@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div>
+        <h1>Formulario de registro de evento</h1>
+    </div>
+    <form action="" id="formEvent">
+        <fieldset>
+            <legend>Información personal de Contacto</legend>
+            <label for="nombre">Nombre/s:
+                <input type="text" id="nombre" placeholder="Alfredo Martin" required>
+            </label> <br>
+            <label for="apellido">Apellido/s:
+                <input type="text" id="apellido" placeholder="Villegas Zoras" required>
+            </label> <br>
+            <label for="Puesto">Puesto:
+                <input type="text" id="Puesto" placeholder="Gerente" required>
+            </label> <br>
+            <label for="Compania">Compañía:
+                <input type="text" id="Compania" placeholder="General Motors" required>
+            </label> <br>
+            <label for="telefono">Teléfono:
+                <input type="tel" id="telefono" placeholder="+541168694545" required>
+            </label> <br>
+            <label for="email">Dirección de email:
+                <input type="email" id="email" placeholder="GM@GeneralMotors.com" required>
+            </label> <br>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais" form="formEvent" required>
+                <option value="Argentina">Argentina</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Paraguay">Paraguay</option>
+                <option value="Uruguay">Uruguay</option>
+                <option value="Chile">Chile</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Perú">Perú</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Por favor complete el siguiente cuestionario.</legend>
+            <br>
+            <fieldset>
+                <legend>Has participado con anterioridad a este evento?</legend>
+                <label for="si">Si
+                </label>
+                <input type="radio" id="si" name="question1" value="no" checked required>
+                <label for="no">No
+                </label>
+                <input type="radio" id="no" name="question1" value="no">
+            </fieldset>
+            <fieldset>
+                <legend>A cual evento/s participaras? Selecciona todas las opciones que correspondan</legend>
+                <label for="viernesDeBienvenida">
+                    <input type="checkbox" id="viernesDeBienvenida" name="question2" checked>
+                    Noche de Bienvenida(Sábado). <br>
+                </label>
+                <label for="discursoSabado">
+                    <input type="checkbox" id="discursoSabado" name="question2">
+                    Discursos de los Sábado. <br>
+                </label>
+                <label for="sabadoALaNoche">
+                    <input type="checkbox" id="sabadoALaNoche" name="question2">
+                    Noches de Sábado. <br>
+                </label>
+                <label for="desayunoDomingo">
+                    <input type="checkbox" id="desayunoDomingo" name="question2">
+                    Desayuno de Domingo.
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Si usted posee alguna dieta particular, por favor déjenos saber para asegurarnos de poder brindarle opciones apropiadas </legend>
+                <label for="alergias">
+                    <input type="checkbox" id="alergias" name="question3" checked>
+                    Alergias. <br>
+                </label>
+                <label for="halal">
+                    <input type="checkbox" id="halal" name="question3">
+                    Halal <br>
+                </label>
+                <label for="kosher">
+                    <input type="checkbox" id="kosher" name="question3">
+                    Kosher <br>
+                </label>
+                <label for="vegetariana">
+                    <input type="checkbox" id="vegetariana" name="question3">
+                    Vegetariana. <br>
+                </label>
+                <label for="vegana">
+                    <input type="checkbox" id="vegana" name="question3">
+                    Vegana. <br>
+                </label>
+                <label for="otros">
+                    <input type="checkbox" id="otros" name="question3">
+                    Otros.(especificar por favor) <br>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>En orden de asegurar confort y accesibilidad, por favor déjenos saber si podemos ayudarlo con sus necesidades indicándonos con las siguientes opciones</legend>
+                <label for="señas">
+                    <input type="checkbox" id="señas" name="question4" checked>
+                    Interprete de lenguaje de señas. <br>
+                </label>
+                <label for="braile">
+                    <input type="checkbox" id="braile" name="question4">
+                    Impresiones en Braille. <br>
+                </label>
+                <label for="traductor">
+                    <input type="checkbox" id="traductor" name="question4">
+                    Traductor. <br>
+                </label>
+                <label for="sillaDeRuedas">
+                    <input type="checkbox" id="sillaDeRuedas" name="question4">
+                    Silla de ruedas. <br>
+                </label>
+                <label for="otros">
+                    <input type="checkbox" id="otros" name="question4">
+                    Otros.(especificar por favor) <br>
+                </label>
+            </fieldset>
+        </fieldset>
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>

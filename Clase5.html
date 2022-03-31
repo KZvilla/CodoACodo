@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Clase 5</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="Clase5.css">
+  </head>
+  <body>
+    <div class="text-primary d-flex flex-column justify-content-center align-items-center container-fluid">
+        <h1 class="card-title p-2">Clase 5: Todavia mas etiquetas y estructura</h1>
+        <h6 class="card-subtitle mb-2 text-muted p-2 ">Veamos un esqueleto estandar.</h6>
+        <p class="card-text p-2 bg-warning text-dark w-50">
+            Plantilla<br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet molestiae obcaecati? Non ex blanditiis pariatur sunt quasi incidunt doloremque soluta in cum vitae, tenetur molestias nisi voluptatum. Ipsam, tempore!
+        </p>
+        <section  class="p-3 shadow">
+                <code>
+                    <pre class="text-white bg-dark" style="width: 1100px;">
+
+                        <span style="color: green;">&lt;!--En vez de usar div, HTML 5 tiene etiquetas que respetan la semantica!--&gt</span>
+  &lt;article&gt <br>
+    &lt;h2&gt; Este es un articulo &lt;/h2&gt; <br>
+  &lt;/article&gt
+
+  <span style="color: green;">&lt;!--Estilo en linea--&gt</span>
+  &lt;div&gt <br>
+    &lt;h2 style="color: blue"&gt; <span style="color: blue;">Este es un h2 en azul </span> &lt;/h2&gt;<br>
+  &lt;/h2&gt
+
+                    </pre>
+                </code>
+        </section>
+    </div>
+    <hr />
+    <div class="text-primary d-flex flex-column justify-content-center align-items-center container-fluid">
+        <p class="card-text p-2 bg-warning text-dark w-50">
+            Etiquetas en Linea<br>
+            No ocupan todo el espacio de la pagina. por ej: "a", "img"<br>
+            ------------------------ <br>
+            Etiquetas en Bloque<br>
+            Ocupan todo el espacio de la pagina. ej: "h1,2,3...etc", "div", "li",
+        </p>
+    </div>
+    <hr />
+    <div class="containerCss">
+        <div class="header">
+            <h1 class="titleCss">Usaremos Css para estilar!</h1>
+        </div>
+        <div class="main">
+            <p class="pharafCss">Utilizaremos la etiqueta link para vincular esta porcion de codigo con una hoja de cascada de estilo (css)</p>
+            <a href="#" class="anchorCss">Esto es un link</a>
+            <ul>
+                <li><a href="#">Esto</a></li>
+                <li><a href="#">Son</a></li>
+                <li><a href="#">Anchors</a></li>
+                <li><a href="#">Anidados</a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <h3>Cristian Villfañez</h3>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+</html>

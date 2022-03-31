@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+}
+
+.main {
+    background-color: darkgreen;
+    width: 800px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header {
+    background-color: white;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer {
+    background-color: whitesmoke;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.titleCss {
+    color: blueviolet;
+    background-color: aliceblue;
+}
+.pharafCss {
+    color: crimson;
+    background-color: aquamarine;
+}
+.anchorCss{
+    color: coral;
+}
+li > a {
+    color: beige;
+    text-decoration: none;
+}
+/* Podemos usar !importante para forzar la jerarquía dentro de comando*/
+/* el HTML toma el la ultima hoja de estilo enlazada*/
+/* Podemos usar seleccionar elementos hijos usando > o  simplemente colocándolo al lado " li a "*/
+/* Podemos llamar a las etiquetas propiamente, "body" "header" h1" etc */
+/* Unidades relativas y absolutas.
+    Unidades Relativas (relativas a algo, la pantalla por ejemplo):
+        -porcentaje(relativo a la pantalla).
+
+        -por lo general el width lleva unidades relativa
+    Unidades Absolutas:
+        -pixeles
+
+*/

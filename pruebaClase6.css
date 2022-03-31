@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+a {
+    display: block  ;
+}
+header {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+h2 {
+  color: purple;
+}
+div {
+  color: brown;
+}
+/* Los identificadores unicos solo pueden ser asignados a un elemento unico! */
+#seccion1 {
+  margin-top: 20px;
+  color: blue;
+}
+#seccion2 {
+  margin-top: 20px;
+  color: blue;
+}
+#seccion3 {
+  margin-top: 20px;
+  color: blue;
+}
+#principal {
+  font-size: 25px;
+  margin-top: 20px;
+}
+#secundario {
+  color: aquamarine;
+  margin-top: 20px;
+}
+
+/* No es recomendable asignar identificadores si el elemento no tiene algo unico, para ello es mejor es usara clases
+ Tener en cuenta que el "id" tiene mas jerarquia que la "clase"*/
+.estiloseccion {
+  padding: 5px;
+  color: deeppink;
+  font-size: 7px;
+}
+/* Si no hay conflicto de jerarquia entre la clases e id, entonces se toman las declaraciones de ambos. */
+#caja__Principal {
+    width: 800px;
+    background-color: aqua;
+}
+.caja {
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-width: 2px;
+}
+#caja__Principal--caja1 {
+    margin-left: auto;
+    margin-right: 0;
+    border-color: crimson;
+    background-color: wheat;
+}
+#caja__Principal--caja2 {
+    margin-left: auto;
+    margin-right: auto;
+    border-color: greenyellow;
+    background-color: blue;
+}
+#caja__Principal--caja3 {
+    border-color: salmon;
+    background-color: rgb(185, 133, 133);
+}

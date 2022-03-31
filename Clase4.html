@@ -54,6 +54,7 @@
 
   <span style="color: green;">&lt;!--En vez de usar div, HTML 5 tiene etiquetas que respetan la semantica!--&gt</span>
   <span style="color: green;">&lt;!--Aca observamos el comportamiento Padre e hijo entre el Header y el div que contiene--&gt</span>
+
   &lt;header&gt <br>
 
     &lt;div&gt;
@@ -89,15 +90,22 @@
       &lt;/section&gt
 
   &lt;/footer&gt
+
   <span style="color: green;">&lt;!--Todo esto queda contenido dentro de body--&gt</span>
   
   <span style="color: green;">&lt;!--Ahora veamos formularios--&gt</span>
 
-  &lt;form action="ejecuta una accion al apretar submit" &gt; Esto es una lista ; <br>
-        &label for="" p&gt; Etiqueta para el input &lt;/p&gt; <br>
-        &input type="text/textarea/checkbox/submit" name="nombre para vincular el input" placeholder="valor de referencia" value="valor del input" ;p&gt; link 2 &lt;/input&gt; <br>
+  &lt;form action="ejecuta una accion al apretar submit" &gt;  <span style="color: green;">//con esto se inicia el formulario&gt</span> <br>
+        &lt;label for="nombre(esto nos ayuda a vincular un input para tener referencia)" p&gt; Etiqueta para el input &lt;/label&gt; <br>
+        &lt;input type="text/textarea/checkbox/submit/date/radio/etc" name="nombre para vincular el input" id='nombre(el mismo que el aclarado en el label)' placeholder="valor de referencia" value="valor del input" ;p&gt; link 2 &lt;/input&gt; <br>
+        &lt;select for="" p&gt; Un selector de opciones &lt;/select&gt; <br>
+          &lt;option for="" p&gt; opcion 1 &lt;/option&gt; <br>
+          &lt;option for="" p&gt; opcion 2 &lt;/option&gt; <br>
+        &lt;textarea for="" p&gt; un Area de texto &lt;/textarea&gt; <br>
+        &lt;fieldset for="" p&gt; Esto recuadra el formulario 
+          &lt;legend for="" p&gt; la leyenda del texto &lt;/legend&gt; <br>
+        &lt;/fieldset&gt; <br>
   &lt;/form&gt
-
 
                     </pre>
                 </code>
