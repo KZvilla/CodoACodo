@@ -1,0 +1,45 @@
+h1 {
+  color: blue;
+}
+
+.tamaño {
+  width: 120px;
+  height: 120px;
+  background-color: aqua;
+  margin-top: 25px;
+  display: inline-block;
+}
+#div-principal {
+  height: 1500px;
+}
+#nav {
+    width: 100%;
+    position: fixed;
+    background-color: darkgoldenrod;
+}
+
+#caja1 {
+  background-color: blue;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+}
+#caja2 {
+  background-color: green;
+}
+#caja3 {
+  background-color: red;
+  top: 15px;
+}
+/*Position define la posicion del elemento
+static: deja la posicion actual
+absolut: Remueve el elemento del flujo de la caja, y lo posiciona de manera relativa con respecto al antecesor.
+relative:fija el lugar original del elemento pero permite moverlo con top, left ect y nos permite moverlo de manera relativa a su posicion original.
+fixed:
+sticky:
+*/
+
+.lista--formatosImagenes {
+    color: whitesmoke;
+}

@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(24, 23, 23);
+  color: whitesmoke;
+}
+header,
+main,
+footer {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+main {
+    margin-top: 25px;
+}
+footer > h3 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+nav > img {
+    border-radius: 15px;
+  border: solid 1px whitesmoke;
+}
+nav > #nombre {
+  display: inline-block;
+  line-height: 45px;
+  padding-left: 5px;
+  color: rgb(127, 168, 255);
+}
+nav > ul > li {
+    display: inline;
+}
+nav > h4 {
+    padding-bottom: 15px;
+}
+nav > ul > li > a {
+text-decoration: none;
+color: red;
+padding-left: 25px;
+user-select: none;
+}
