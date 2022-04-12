@@ -3,13 +3,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #d7cdc4 ;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 header {
   background-image: url(https://img.freepik.com/foto-gratis/maqueta-pared-blanca-casa-estilo-loft-sofa-accesorios-habitacion-representacion-3d_41470-3836.jpg?t=st=1649183362~exp=1649183962~hmac=60f3d5d134dc2729e6618a735ae7c7673b235ef5019dd80a757d38d3270d3e17&w=1380);
   background-size: cover;
   height: 100vh;
-}
-body{
-  background-color: #d7cdc4 ;
 }
 nav,
 h1 {
@@ -19,18 +20,23 @@ h1 {
 }
 nav {
   right: 15px;
-  top: 10px;
+  top: 25px;
 }
 h1 {
   left: 15px;
   top: 10px;
 }
+h1:hover {
+  color: darkorange;
+}
+h2 {
+  padding-top: 25px;
+  text-align: center;
+  color:whitesmoke;
+}
 span {
   color: darkorange;
   text-decoration: underline;
-}
-h1:hover {
-  color: darkorange;
 }
 a {
   padding: 2px;
@@ -62,27 +68,23 @@ a:visited {
   text-decoration: none;
 }
 .caja--centrada {
-  width: 800px;
+  width: 915px;
   margin-left: auto;
   margin-right: auto;
 }
 .seccion-caja {
+  display: inline-block;
   width: 300px;
   height: 450px;
   background-color: bisque;
 }
 #caja1 {
   background-color: aqua;
-  border: 5px solid black;
 }
 #caja2 {
   background-color: blueviolet;
 }
-.container--seccion {
+.container__seccion {
   margin-top: 25px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 25px;
+  display: inline-block;
 }
