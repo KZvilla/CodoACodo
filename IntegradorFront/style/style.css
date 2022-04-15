@@ -1,28 +1,30 @@
-body, html {
-    height: 100%;
-  }
-header{
-    height: 100vh;
+body,
+html {
+  height: 100%;
+  margin: 0;
 }
-#imagen--fondo{
-    opacity: 0.4;
-    height: 100vh;
-    filter: contrast(200%);
+header {
+  height: 100vh;
 }
-#imagen--oradores{
-    width: 100px;
-    height: 100px;
+#imagen--fondo {
+  opacity: 0.4;
+  height: 100vh;
+  filter: contrast(200%);
 }
 #comprar {
-    color: green;
+  color: #008000;
 }
-#textoImagen{
-    width: 868px;
-    position: absolute;
-    bottom: 100px;
-    right: 100px;
+#textoImagen {
+  bottom: 225px;
+  right: 150px;
 }
-.card-deck {
-    margin: auto;
-    width: 768px;
-}
+.noseleccionar {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
+
