@@ -18,6 +18,10 @@ header {
   bottom: 225px;
   right: 150px;
 }
+#charla {
+    color: black;
+    text-decoration-style: dotted
+}
 .noseleccionar {
     -webkit-touch-callout: none; /* iOS Safari */
       -webkit-user-select: none; /* Safari */
