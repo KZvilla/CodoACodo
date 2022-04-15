@@ -4,10 +4,14 @@ body, html {
 header{
     height: 100vh;
 }
-#ImagenFondo{
+#imagen--fondo{
     opacity: 0.4;
     height: 100vh;
     filter: contrast(200%);
+}
+#imagen--oradores{
+    width: 100px;
+    height: 100px;
 }
 #comprar {
     color: green;
@@ -17,4 +21,8 @@ header{
     position: absolute;
     bottom: 100px;
     right: 100px;
+}
+.card-deck {
+    margin: auto;
+    width: 768px;
 }
