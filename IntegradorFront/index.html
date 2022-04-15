@@ -6,7 +6,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Bootstrap CSS v5.1.3 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Bootstrap CSS v5.1.3 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
@@ -16,7 +19,47 @@
 
 <body>
     <header>
-
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="navbar-brand d-flex align-items-center ml-5 pl-5" href="#">
+                <img src="./img/codoacodo.png" alt="Imagen codoacodo" class="Responsive image" height="100px"
+                    width="200px">
+                <p class="h3 font-weight-normal">Conf Bs As</p>
+            </div>
+            <div class="navbar-brand mr-5 pr-5">
+                <ul class="navbar-nav d-flex flex-row">
+                    <li class="nav-item active ml-3">
+                        <a class="nav-link" href="#">La Conferencia <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Los Oradores</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#">Conviertete en orador</a>
+                    </li>
+                    <li class="nav-item ml-3">
+                        <a class="nav-link" href="#" id="comprar">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="card bg-dark text-white">
+            <img class="card-img" src="./img/ba1.jpg" alt="Imagen Buenos aires" id="ImagenFondo">
+            <div class="container mr-5 pr-5 mb-5 pb-5" id="textoImagen">
+              <p class="card-title h1 text-right">Conf Bs As</p>
+              <p class="card-text text-right h3 font-weight-normal">Bs As llega por primera vez a Argentina. Un evento para compartir con
+                  nuestra comunidad el conocimiento y experienza de los expertos que
+                  estan creadn el futuro de internet. Ven a conocer a miembros del
+                  evento, a toros estudianes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+              </p>
+              <div class="d-flex justify-content-end pt-2">
+                  <button type="button" class="btn btn-outline-light mr-2">Quiero ser orador</button>
+                  <button type="button" class="btn btn-success">Comprar tickets</button>
+              </div>
+            </div>
+          </div>
     </header>
     <main>
 

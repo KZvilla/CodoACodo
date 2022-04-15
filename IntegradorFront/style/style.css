@@ -1,0 +1,20 @@
+body, html {
+    height: 100%;
+  }
+header{
+    height: 100vh;
+}
+#ImagenFondo{
+    opacity: 0.4;
+    height: 100vh;
+    filter: contrast(200%);
+}
+#comprar {
+    color: green;
+}
+#textoImagen{
+    width: 868px;
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+}
