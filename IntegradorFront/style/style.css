@@ -38,3 +38,10 @@ header {
                                     supported by Chrome, Edge, Opera and Firefox */
   }
 
+  @media (max-width: 600px) {
+    #texto--imagen {
+      bottom: 0;
+    }
+  }
+
+
