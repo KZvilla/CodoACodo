@@ -1,5 +1,3 @@
-// Ciclos repetitivos exactos, for, for in for of.
-
 // Ciclos repetitivos inexactos, while y do while.
 let letra;
 let intentos = 3;
@@ -18,3 +16,12 @@ if (intentos === 0 && letra != "a") {
   console.log("Ganaste");
   console.log("Intentos restantes " + intentos);
 }
+
+// Do.. while
+var dowhile = 0;
+var opcion = prompt("Ingrese una opcion");
+do {
+  console.log("Hola probando el Do...While " + (dowhile + 1));
+  var notasAlumnos = Number(prompt("Ingrese una nota"));
+  dowhile++;
+} while (dowhile < 10);
