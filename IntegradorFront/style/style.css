@@ -17,11 +17,11 @@ header {
   color: black;
   text-decoration-style: dotted
 }
-#btn--enviar{
-  background-color: #96c93e;
-}
 #footer{
   background-color: #1b3848;
+}
+.btn--enviar{
+  background-color: #96c93e;
 }
 .imagen--fondo {
   opacity: 0.4;
