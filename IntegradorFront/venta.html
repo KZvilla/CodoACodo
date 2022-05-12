@@ -49,75 +49,75 @@
         </nav>
     </header>
     <main>
-        <form class="row container mx-auto p-4 justify-content-center m-0 mb-3">
-            <div class="row container-fluid justify-content-center">
-                <div class="col-4">
-                    <div class="card text-center border-primary" id="estudiante">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold p-2">Estudiante</h3>
-                            <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
-                            <p class="h2 card-text fw-bold p-2">80%</p>
-                            <p class="card-text text-muted">* presentar documentacion</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card text-center border-primary" id="trainee">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold p-2">Trainee</h3>
-                            <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
-                            <p class="h2 card-text fw-bold p-2">50%</p>
-                            <p class="card-text text-muted">* presentar documentacion</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card text-center border-primary" id="junior">
-                        <div class="card-body">
-                            <h3 class="card-title fw-bold p-2">Junior</h3>
-                            <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
-                            <p class="h2 card-text fw-bold p-2">15%</p>
-                            <p class="card-text text-muted">* presentar documentacion</p>
-                        </div>
+        <form class="row container mx-auto p-4 justify-content-center gx-0 mb-3">
+            <div class="col-4 pe-1">
+                <div class="card text-center border-primary noseleccionar" id="estudiante">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold p-2">Estudiante</h3>
+                        <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                        <p class="h2 card-text fw-bold p-2">80%</p>
+                        <p class="card-text text-muted">* presentar documentacion</p>
                     </div>
                 </div>
             </div>
-            <p class="h6 text-center fw-normal">VENTA</p>
+            <div class="col-4">
+                <div class="card text-center border-primary noseleccionar" id="trainee">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold p-2">Trainee</h3>
+                        <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                        <p class="h2 card-text fw-bold p-2">50%</p>
+                        <p class="card-text text-muted">* presentar documentacion</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 ps-1">
+                <div class="card text-center border-primary noseleccionar" id="junior">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold p-2">Junior</h3>
+                        <h6 class="card-subtitle mb-2">Tienen un descuento</h6>
+                        <p class="h2 card-text fw-bold p-2">15%</p>
+                        <p class="card-text text-muted">* presentar documentacion</p>
+                    </div>
+                </div>
+            </div>
+            <p class="h6 text-center fw-normal mt-2">VENTA</p>
             <p class="h1 text-center fw-bold mb-2">VALOR DE TICKET $200</p>
             <div class="col-6 p-0 pe-1">
-                <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                <input required type="text" pattern="[a-zA-Z]*" class="form-control" placeholder="Nombre" aria-label="First name">
             </div>
             <div class="col-6 p-0 ps-1">
-                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                <input required type="text" pattern="[a-zA-Z]*" class="form-control" placeholder="Apellido" aria-label="Last name">
             </div>
             <div class="row g-2 p-0 justify-content-center">
-                <div class="col-12 p-0 g-2"><input type="email" class="form-control" placeholder="Correo"
+                <div class="col-12 p-0 g-2"><input required pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" type="email" class="form-control" placeholder="Correo"
                         aria-describedby="emailHelp"></div>
             </div>
             <div class="col-6 p-0 pe-1 mt-3">
-                <label for="cantidad" class="form-label">Cantidad</label>
-                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad">
+                <label for="cantidad" class="form-label noseleccionar">Cantidad</label>
+                <input type="number" class="form-control" id="cantidad" placeholder="Cantidad"
+                    min="1" oninput="validity.valid||(value='');">
             </div>
             <div class="col-6 p-0 ps-1 mt-3">
-                <label for="categoria" class="form-label">Categoria</label>
+                <label for="categoria" class="form-label noseleccionar">Categoria</label>
                 <select id="categoria" class="form-select">
                     <option value="0" selected>Seleccione una Categoria</option>
-                    <option value="1" >Estudiante</option>
+                    <option value="1">Estudiante</option>
                     <option value="2">Trainee</option>
                     <option value="3">Junior</option>
                 </select>
             </div>
             <div class="row g-2 p-0 justify-content-center">
                 <div class="alert alert-primary mt-3 mb-2 p-2 col-12" role="alert" id="totalPagar">
-                    Test de alerta
+                    Total a Pagar: $
                 </div>
             </div>
             <div class="row justify-content-center g-2 m-0 p-0">
                 <div class="col-6 d-grid p-0 pe-1">
-                    <button class="btn btn-success btn--enviar" type="button">Borrar</button>
+                    <button class="btn btn-success btn--enviar noseleccionar" type="reset">Borrar</button>
                 </div>
                 <div class="col-6 d-grid p-0 ps-1">
-                    <button onclick="resumen()"class="btn btn-success btn--enviar" type="button">Resumen</button>
+                    <button onclick="resumen()" class="btn btn-success btn--enviar noseleccionar"
+                        type="button">Resumen</button>
                 </div>
             </div>
         </form>
