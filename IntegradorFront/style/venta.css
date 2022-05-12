@@ -3,6 +3,8 @@ html {
   margin: 0;
 }
 footer{
+  width: 100%;
+  background-color: #1b3848;
 }
 #comprar {
   color: #008000;
@@ -15,16 +17,8 @@ footer{
   color: black;
   text-decoration-style: dotted;
 }
-#footer {
-  background-color: #1b3848;
-}
 .btn--enviar {
   background-color: #96c93e;
-}
-.imagen--fondo {
-  opacity: 0.4;
-  height: 100vh;
-  filter: contrast(175%);
 }
 .noseleccionar {
   -webkit-touch-callout: none; /* iOS Safari */

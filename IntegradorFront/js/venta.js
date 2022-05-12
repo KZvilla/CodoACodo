@@ -33,13 +33,18 @@ function resumen() {
   let categoria = document.getElementById("categoria").value;
   let cantidad = document.getElementById("cantidad").value;
   let desc = DESCUENTOS[categoria - 1];
+  console.log(desc);
+  console.log(cantidad);
+  console.log(categoria);
   const totalPagar = document.getElementById("totalPagar");
   if (desc === undefined) {
     totalPagar.textContent = `Debe completar los campos requeridos`;
     document.getElementById("totalPagar").classList.remove("alert-primary");
     document.getElementById("totalPagar").classList.add("alert-danger");
   } else {
-    totalPagar.textContent = `Total a Pagar: $${PRECIO * desc * cantidad}`;
+    totalPagar.textContent = `Total a Pagar: $${
+      (PRECIO - PRECIO * desc) * cantidad
+    }`;
     document.getElementById("totalPagar").classList.add("alert-primary");
     document.getElementById("totalPagar").classList.remove("alert-danger");
   }

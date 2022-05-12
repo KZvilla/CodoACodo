@@ -6,6 +6,9 @@ html {
 header {
   height: 100vh;
 }
+footer{
+  background-color: #1b3848;
+}
 #comprar {
   color: #008000;
 }
@@ -16,9 +19,6 @@ header {
 #charla {
   color: black;
   text-decoration-style: dotted
-}
-#footer{
-  background-color: #1b3848;
 }
 .btn--enviar{
   background-color: #96c93e;
