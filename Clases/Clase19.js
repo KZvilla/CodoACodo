@@ -13,10 +13,10 @@ function pedirEdadNombre(nombre,edad,verdad) {
     } else console.log("No existe")
 }
 //Invocar la funcion con parametro
-pedirEdadNombre("Cristian",28,false)
+pedirEdadNombre("Cristian",28,true)
 
 //Funciones que devuelven "algo"
 function devuelve(){
-    return console.log(18)
+    return 18
 }
-devuelve()
+console.log(devuelve()) // la funcion devolverar 18
