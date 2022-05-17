@@ -5,9 +5,18 @@ function pedirNombre() {
 }
 //Llamar funcion
 pedirNombre()
-//Funcion con argumento
-function pedirEdad(edad) {
-    console.log("Tu edad es 18")
+//Funcion con argumento(el argumento puede definirse ahi no mas: edad=29)
+function pedirEdadNombre(nombre,edad,verdad) {
+    if (verdad) {
+        console.log("Tu nombre es " + nombre)
+        console.log("Tu edad es " + edad)
+    } else console.log("No existe")
 }
 //Invocar la funcion con parametro
-pedirEdad(18)
+pedirEdadNombre("Cristian",28,false)
+
+//Funciones que devuelven "algo"
+function devuelve(){
+    return console.log(18)
+}
+devuelve()
