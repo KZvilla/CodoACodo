@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase20: Objetos</title>
+</head>
+
+<body>
+
+    
+
+    <script>
+        //Objetos literales
+        // necesitan un key:value,
+        const heroe = {
+            nombre: "Batman",
+            apellido: "Diaz",
+            colorTraje: "Negro",
+            edad: 39,
+            volar: function (capa) {
+                console.log("No puedo volar: " + capa) //Este seria un metodo, puede tener o no tener parametro.
+            },
+            dinero: function () {
+                console.log("Soy millonario")
+            }
+        }
+        console.log(heroe); //llamamos al objeto
+        console.log(heroe.nombre); //llamamos una propiedad(key) y ver su respectivo valor(value).
+        //Como podemos ver console es un obj y .log es un metodo
+        //Los metodos son acciones que puede hacer un objeto.
+        console.log(heroe.volar("tengo capa"));
+        console.log(heroe.dinero());
+        console.clear()
+        //En sintesis
+        /*
+        algoPorAqui()----> Funcion
+        algoPorAlla.cosa ----> Objeto al que llamo una propiedad
+        algoTambien.otraCosa() ----> Objeto al que llamo un metodo
+        */
+       /////////////////////////////////////////////////////////////
+    </script>
+</body>
+
+</html>
