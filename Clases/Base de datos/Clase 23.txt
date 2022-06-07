@@ -1,0 +1,8 @@
+Con GUI:
+Usamos "Admin" para verificar que Apache y MySQL están funcionando.
+Podemos almacenar la base de datos en un backup.
+Para generar una base de datos, pensamos el negocio general
+elegimos crear DATABASE, asignamos un nombre pertinente y codificación adecuada.
+procedemos a crear una tabla asignando un nombre y cantidad de columnas.
+//En la tabla:
+Asignamos nombre, tipo de datos, longitud(limite de caracteres)
