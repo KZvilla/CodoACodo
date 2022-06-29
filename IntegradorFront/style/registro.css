@@ -43,3 +43,7 @@ footer {
     bottom: 0;
   }
 }
+.field-item {
+  color: #aaa;
+  font-size: 14px;
+}
