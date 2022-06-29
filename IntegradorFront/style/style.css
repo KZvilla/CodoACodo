@@ -12,6 +12,9 @@ footer {
 .registro {
   color: #008000;
 }
+.registro:hover {
+  color: #ffff;
+}
 #texto--imagen {
   bottom: 225px;
   right: 150px;

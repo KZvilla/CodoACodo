@@ -8,9 +8,6 @@ footer {
   width: 100%;
   background-color: #1b3848;
 }
-.registro {
-  color: #008000;
-}
 #texto--imagen {
   bottom: 225px;
   right: 150px;
@@ -18,6 +15,15 @@ footer {
 #charla {
   color: black;
   text-decoration-style: dotted;
+}
+.icon {
+  color: #198754;
+}
+.registro {
+  color: #008000;
+}
+.registro:hover {
+  color: #ffff;
 }
 .btn--enviar {
   background-color: #96c93e;
