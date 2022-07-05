@@ -1,11 +1,9 @@
 body,
 html {
   margin: 0;
+  min-height: 100%;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   background-color: #1b3848;
 }
 #texto--imagen {
@@ -15,6 +13,10 @@ footer {
 #charla {
   color: black;
   text-decoration-style: dotted;
+}
+.navbar--logo__size {
+  height: 100px;
+  width: 200px;
 }
 .icon {
   color: #198754;
@@ -27,6 +29,15 @@ footer {
 }
 .btn--enviar {
   background-color: #96c93e;
+}
+.modal--back{
+  background-color: #1b3848;
+}
+.field-item {
+  color: #aaa;
+  font-size: 14px;
+  background-color: #1b3848;
+  padding: 0.275rem;
 }
 .noseleccionar {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -42,8 +53,4 @@ footer {
   #texto--imagen {
     bottom: 0;
   }
-}
-.field-item {
-  color: #aaa;
-  font-size: 14px;
 }
