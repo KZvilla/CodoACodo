@@ -1,17 +1,41 @@
 @import "var", "norm";
 body {
-  background-color: $clr-DgrayPrim;
-  font-family: 'Roboto', sans-serif;
+  background: $bg;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 button {
-    border-radius: 50%;
+  border-radius: 50%;
+  border: 1px $clr-redPrim solid;
+}
+p {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+}
+.contenedor--selector{
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & select {
+    background-color: $fg;
+    border-radius: 5px;
+    border: none;
+    font-weight: 900;
+  }
 }
 .contenedor--clase {
   display: grid;
   margin: auto;
   justify-content: center;
-  grid-template-columns: repeat(3, 250px);
-  grid-template-rows: auto repeat(3, 250px);
+  align-content: center;
+  grid-template-columns: repeat(3, 75px);
+  grid-template-rows: 1fr repeat(3, 75px);
   grid-column-gap: 1em;
   grid-row-gap: 1em;
 }
@@ -19,6 +43,7 @@ button {
 .contenedor--clase__titulo {
   grid-area: 1 / 1 / 2 / 4;
   text-align: center;
+  color: $clr-slmonPrim;
 }
 .btn2 {
   grid-area: 2 / 1 / 3 / 2;
@@ -46,4 +71,38 @@ button {
 }
 .btn10 {
   grid-area: 4 / 3 / 5 / 4;
+}
+.corner-button {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+  background: transparent;
+  border: $border-width solid currentColor;
+  padding: 1.5rem 2rem;
+  color: $fg;
+  position: relative;
+  transition: color $dur;
+  z-index: 1;
+
+  &:hover {
+    color: $clr-redPrim;
+    &::before {
+      width: 0;
+    }
+    &::after {
+      height: 0;
+    }
+  }
+  &:active {
+    border-width: $border-width / 2;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background: $bg;
+    z-index: -1;
+    transition: all $dur;
+  }
 }

@@ -8,45 +8,111 @@
     <link rel="stylesheet" href="./dist/css/main.css" />
   </head>
   <body>
+    <script>
+      function playsound(id) {
+        let sound = document.querySelector(id);
+        sound.play();
+      }
+      function stopsound(id) {
+        let sound = document.querySelector(id);
+        sound.pause();
+      }
+    </script>
     <main>
-      <script>
-        let snd = new Audio("./sound/zaowlrd.mp3");
-      </script>
       <div class="contenedor">
         <div class="contenedor--clase">
           <h1 class="contenedor--clase__titulo">The Clock Mage</h1>
           <button
-            class="btn2"
+            id="btn1"
+            class="btn2 corner-button"
             type="button"
-            onclick="document.querySelector('#sound1').play();"
+            onclick="playsound('#sound1')"
           >
+            <p>Stop Time!</p>
             <audio id="sound1" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
-          <button class="btn3">
-            <audio id="sound2" src="./sound/zaowlrd.mp3" preload="auto"></audio>
+          <button
+            id="btn2"
+            class="btn3 corner-button"
+            type="button"
+            onclick="playsound('#sound2')"
+          >
+            <p>Forward Time!</p>
+            <audio
+              id="sound2"
+              src="./sound/TickTock.m4a"
+              preload="auto"
+            ></audio>
           </button>
-          <button class="btn4">
+          <button
+            id="btn3"
+            class="btn4 corner-button"
+            type="button"
+            onclick="playsound('#sound2')"
+          >
+            <p>Stop Time!</p>
             <audio id="sound3" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
-          <button class="btn5">
+          <button
+            id="btn4"
+            class="btn5 corner-button"
+            type="button"
+            onclick="playsound('#sound4')"
+          >
+            <p>Stop Time!</p>
             <audio id="sound4" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
-          <button class="btn6">
+          <button
+            id="btn5"
+            class="btn6 corner-button"
+            type="button"
+            onclick="playsound('#sound5')"
+          >
+            <p>Stop Time!</p>
             <audio id="sound5" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
-          <button class="btn7">
+          <button
+            id="btn6"
+            class="btn7 corner-button"
+            type="button"
+            onclick="playsound('#sound6')"
+          >
+            <p>Stop Time!</p>
             <audio id="sound6" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
-          <button class="btn8">
+          <button
+            id="btn7"
+            class="btn8 corner-button"
+            type="button"
+            onclick="playsound('#sound7')"
+          >
+            <p>Stop Time!</p>
             <audio id="sound7" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
-          <button class="btn9">
+          <button
+            id="btn8"
+            class="btn9 corner-button"
+            type="button"
+            onclick="playsound('#sound8')"
+          >
+            <p>Stop Time!</p>
             <audio id="sound8" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
-          <button class="btn10">
+          <button
+            id="btn9"
+            class="btn10 corner-button"
+            type="button"
+            onclick="playsound('#sound9')"
+          >
+            <p>Stop Time!</p>
             <audio id="sound9" src="./sound/zaowlrd.mp3" preload="auto"></audio>
           </button>
         </div>
+      </div>
+      <div class="contenedor--selector">
+        <select name="clases" id="">
+          <option value="ClockMage">The Clock Mage</option>
+        </select>
       </div>
     </main>
   </body>
