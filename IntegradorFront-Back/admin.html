@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Admin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-light">
+    <main class="d-flex justify-content-center align-items-center m-auto mt-5 bg-info p-5 rounded-5 shadow-lg w-50">
+      <form
+        class="container align-items-center justify-content-center m-auto row"
+        action="./functions/listado.php"
+        method="POST"
+      >
+        <div class="mb-3 col-3 p-0 text-center">
+          <label for="user" class="form-label">Usuario</label>
+          <input type="text" class="form-control" id="user" name="user" placeholder="Ingrese su usuario"/>
+        </div>
+        <div class="mb-3 col-3 p-0 text-center">
+          <label for="pass" class="form-label">Password</label>
+          <input type="password" class="form-control" id="pass" name="pass" placeholder="Ingerese su Password"/>
+        </div>
+        <div class="row justify-content-center align-content-center p-0">
+          <button type="submit" class="btn btn-primary col-6">Loggin</button>
+        </div>
+      </form>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

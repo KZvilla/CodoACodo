@@ -85,8 +85,8 @@
     </header>
     <main>
       <form
-        action="registro.php"
-        class="row container mx-auto p-4 justify-content-center gx-0 mt-5"
+        action="./functions/registro.php"
+        class="row container mx-auto p-4 justify-content-center gx-0"
         method="POST"
       >
         <p class="h1 text-center fw-bold mb-2">Registro</p>
@@ -115,7 +115,7 @@
         </div>
 
         <div class="row g-2 p-0 justify-content-center">
-          <div class="col-6 p-0 g-2">
+          <div class="col-3 p-0">
             <input
               required
               pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}"
@@ -123,6 +123,15 @@
               class="form-control"
               placeholder="Correo"
               name="correo"
+            />
+          </div>
+          <div class="col-3 p-0">
+            <input
+              required
+              type="tel"
+              class="form-control"
+              placeholder="Telefono"
+              name="telefono"
             />
           </div>
         </div>
